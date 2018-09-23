@@ -28,7 +28,7 @@ const data = Array(1000).fill({ name: "1", size: 1 });
 const Items = ({ index, style }) => {
   const item = data[index];
   return (
-    <div>
+    <div style={style}>
       <StyledCol span={12}>{item.name}</StyledCol>
       <StyledCol span={12}>{item.size}</StyledCol>
     </div>
